@@ -11,50 +11,16 @@
     <section class="menu">
     <h1>Exercicíos</h1>
     <table>   
-        <td><a href="#carregandoSistema"><div class="divEx">1</div></a></td>
-        <td><div>ex2</div></td>
+        <td><a href="CarregamentoSistema/carregamento-sistema.html"><div class="divEx">1</div></a></td>
+        <td><a href="SimuladorPing/simulador-ping.html"><div class="divEx">2</div></a></td>
+        <td><a href="PedidoIfood/pedido-ifood.html"><div class="divEx">3</div></a></td>
+        <td><a href="SimuladorLogin/simulador-login.html"><div class="divEx">4</div></a></td>
+        <td><a href="Sorteio/sorteio.html"><div class="divEx">5</div></a></td>
+
+
     </table>
     </section>
-    <section class="carregamentoSistema">
-        <h2>Carregamento Sistema</h2>
 
-        <img id="imagem" src="image/carregando.gif" alt="">
-        <div id="mensagem"></div>
-
-         <script>
-            const imagem = document.getElementById('imagem');
-            const mensagem = document.getElementById('mensagem');
-
-
-            function iniciaCarregamento() {
-                mensagem.textContent = 'Inicializando...';
-                imagem.src = 'image/carregando.gif';
-                
-
-                setTimeout(() => {
-                mensagem.textContent = 'Carregando Módulos...';
-
-
-                setTimeout(() => {
-                    mensagem.textContent = 'Sistema Pronto!';
-                    imagem.src = 'image/pronto.png';
-
-                setTimeout(() => {
-                    iniciaCarregamento();
-                }, 2000);
-
-
-                }, 4000);
-
-            }, 1000);
-        
-            }
-            iniciaCarregamento();
-        
-        </script>
-    </section>
-
-       
     </main>
     
 </body>

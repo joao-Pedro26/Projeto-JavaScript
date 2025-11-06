@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Document</title>
+</head>
+<body>
+     <section class="carregamentoSistema">
+        <h2>Carregamento Sistema</h2>
+
+        <img id="imagem" src="image/carregando.gif" alt="">
+        <div id="mensagem"></div>
+
+         <script>
+            const imagem = document.getElementById('imagem');
+            const mensagem = document.getElementById('mensagem');
+
+
+            function iniciaCarregamento() {
+                mensagem.textContent = 'Inicializando...';
+                imagem.src = 'image/carregando.gif';
+                
+
+                setTimeout(() => {
+                mensagem.textContent = 'Carregando Módulos...';
+
+
+                setTimeout(() => {
+                    mensagem.textContent = 'Sistema Pronto!';
+                    imagem.src = 'image/pronto.png';
+
+                setTimeout(() => {
+                    iniciaCarregamento();
+                }, 2000);
+
+
+                }, 4000);
+
+            }, 1000);
+        
+            }
+            iniciaCarregamento();
+        
+        </script>
+    </section>
+    
+</body>
+</html>

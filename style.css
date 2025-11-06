@@ -38,6 +38,13 @@ h2 {
     background-color: #1c3bb8;
     cursor: pointer;
 }
+.carregamentoSistema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #imagem {
     width: 230px;
